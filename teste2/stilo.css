@@ -2,6 +2,8 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
+    font-size: medium;
+    text-align: center;
 }
 
 body{
@@ -20,22 +22,30 @@ ul{
 .container{
     width: 100vw;
     height: 100vw;
-    background-color: black
+    background-color: black;
 
     display:grid;
-    grid-template-areas:"a b c" 
+    grid-template-areas:"barra barra barra"
+                        "a b c" 
                         "d e f" 
                         "g h i";
-    grid-template-rows: 10% 75% 15%;
-    grid-template-columns: 15% 70%;
+
+    grid-template-rows:  20% 20% 20% 20%;
+    grid-template-columns: 33% 33% 33%;
     gap: 1vh;
     justify-content:center;
+    row-gap: 10px;
+}
+
+barraNavegacao{
+    grid-area: barra;
+    
 }
 
 .header{
     background-color: lightgray;
     grid-area: a;
-    gap: 2vh;
+    gap: 1vh;
 }
 
 .div1{
