@@ -5,9 +5,13 @@
    
 }
 
+body{
+    background-color: black;
+}
+
 .container{
     width: 100vw;
-    height: 100vw;
+    height: auto;
     background-color: black;
     
 
@@ -24,7 +28,7 @@
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    width: 250px;
+   size: 250px;
 }
 
 #card1{
